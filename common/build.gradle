@@ -15,6 +15,10 @@ jacocoTestReport {
     dependsOn test
 }
 
+repositories {
+    mavenLocal()
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
@@ -99,4 +103,6 @@ dependencies {
     compileOnly 'org.mongodb:mongodb-driver-legacy:4.5.0'
     compileOnly 'org.postgresql:postgresql:42.6.0'
     compileOnly 'org.yaml:snakeyaml:1.28'
+
+    compileOnly 'net.luckperms:rest-api-client:0.1-SNAPSHOT'
 }
